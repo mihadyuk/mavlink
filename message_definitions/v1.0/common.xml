@@ -107,13 +107,13 @@
                     <description>Octorotor</description>
                </entry>
                <entry value="15" name="MAV_TYPE_TRICOPTER">
-                    <description>Octorotor</description>
+                    <description>Tricopter</description>
                </entry>
                <entry value="16" name="MAV_TYPE_FLAPPING_WING">
                     <description>Flapping wing</description>
                </entry>
                <entry value="17" name="MAV_TYPE_KITE">
-                    <description>Flapping wing</description>
+                    <description>Kite</description>
                </entry>
                <entry value="18" name="MAV_TYPE_ONBOARD_CONTROLLER">
                     <description>Onboard companion controller</description>
@@ -1144,6 +1144,18 @@
                    <param index="6">Empty</param>
                    <param index="7">Empty</param>
                </entry>
+
+               <entry name="MAV_CMD_DO_SET_POSITION_YAW_THRUST" value="213">
+                    <description>Sets a desired vehicle turn angle and thrust change</description>
+                    <param index="1">yaw angle to adjust steering by in centidegress</param>
+                    <param index="2">Thrust - normalized to -2 .. 2</param>
+                    <param index="3">Empty</param>
+                    <param index="4">Empty</param>
+                    <param index="5">Empty</param>
+                    <param index="6">Empty</param>
+                    <param index="7">Empty</param>
+               </entry>
+
 
               <entry value="220" name="MAV_CMD_DO_MOUNT_CONTROL_QUAT">
                 <description>Mission command to control a camera or antenna mount, using a quaternion as reference.</description>
